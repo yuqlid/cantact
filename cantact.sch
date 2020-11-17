@@ -1234,21 +1234,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 2800 4850 2800
 $Comp
-L Switch:SW_SPST SW1
-U 1 1 5FAB2BCC
-P 4500 3300
-F 0 "SW1" H 4500 3535 50  0000 C CNN
-F 1 "SW_SPST" H 4500 3444 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 4500 3300 50  0001 C CNN
-F 3 "~" H 4500 3300 50  0001 C CNN
-	1    4500 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 3300 5350 3300
-Wire Wire Line
-	4300 3300 4100 3300
-$Comp
 L Switch:SW_DPDT_x2 SW2
 U 1 1 5FAD8781
 P 10100 4600
@@ -1304,4 +1289,25 @@ F 3 "~" H 9500 1600 50  0001 C CNN
 $EndComp
 NoConn ~ 9300 1900
 NoConn ~ 9000 1300
+Text Label 9650 3900 0    50   ~ 0
+CAN_+
+Text Label 9650 4000 0    50   ~ 0
+CAN_-
+$Comp
+L mylib:SKRPACE010 SW1
+U 1 1 5FB5B91C
+P 4500 3500
+F 0 "SW1" V 4454 3301 50  0000 R CNN
+F 1 "SKRPACE010" V 4545 3301 50  0000 R CNN
+F 2 "Button_Switch_SMD_my:ALPS_SKRPAxE010" V 4450 3500 60  0001 C CNN
+F 3 "http://www.alps.com/prod/info/J/HTML/Tact/SurfaceMount/SKRP/SKRP_list.html" V 4450 3500 60  0001 C CNN
+	1    4500 3500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4100 3300 4400 3300
+Wire Wire Line
+	4600 3300 5350 3300
+NoConn ~ 4400 3700
+NoConn ~ 4600 3700
 $EndSCHEMATC
